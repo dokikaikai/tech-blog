@@ -19,6 +19,12 @@ export function Header() {
             Writing
           </Link>
           <Link
+            href="/resume"
+            className="text-sm text-muted hover:text-foreground transition-colors"
+          >
+            Resume
+          </Link>
+          <Link
             href="/about"
             className="text-sm text-muted hover:text-foreground transition-colors"
           >
