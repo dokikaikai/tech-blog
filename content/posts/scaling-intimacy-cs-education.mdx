@@ -1,0 +1,76 @@
+---
+title: "Scaling Intimacy in CS Education"
+date: "2024-11-15"
+excerpt: "Can we maintain the personal touch of one-on-one instruction while teaching thousands of students? Exploring the tension between scale and connection in computer science education."
+category: "CS Education"
+---
+
+There's a particular moment in teaching that I've come to think of as "the click"—when a student's confusion suddenly transforms into understanding. You can almost see it happen: the furrowed brow relaxes, the eyes widen slightly, and they say something like "Oh, *that's* what you mean."
+
+This moment is precious and, I would argue, irreplaceable. It requires attention, patience, and a kind of cognitive intimacy between teacher and student. The instructor needs to understand not just what the student doesn't know, but *how* they're misunderstanding—what faulty mental model is leading them astray.
+
+The question that keeps me up at night: **Can this moment scale?**
+
+## The Problem of CS Education at Scale
+
+Computer science enrollments have exploded over the past decade. At many universities, introductory CS courses now have hundreds or even thousands of students. The ratio of students to instructors has stretched to the breaking point.
+
+We've tried various solutions:
+
+- **More TAs**: But quality varies, and training is expensive
+- **Office hours**: Chronically overcrowded, with students waiting hours for minutes of help
+- **Online forums**: Often leave students more confused than before
+- **Recorded lectures**: Lack the responsiveness that makes teaching work
+
+Each of these approaches addresses the problem of *information delivery*, but none of them solve the problem of *cognitive intimacy*. They can tell students what to think, but they struggle to understand *how* students are thinking.
+
+## Enter AI Tutoring
+
+The promise of AI tutoring systems is seductive: personalized instruction for every student, available 24/7, infinitely patient. And recent advances in large language models have made these systems more capable than ever.
+
+I've been working on research that examines how students interact with AI tutoring systems in introductory programming courses. What we're finding complicates the simple narrative.
+
+```python
+# A simple example that trips up many students
+def calculate_average(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total / len(numbers)
+```
+
+When a student doesn't understand why this function fails on an empty list, an AI tutor can explain the division-by-zero error. It can even generate practice problems and work through solutions step by step.
+
+But can it understand *why* this particular student is confused? Is it because they don't understand functions? Because they're unclear on what division by zero means? Because they've never considered edge cases? Because they're exhausted from working a night shift?
+
+<Callout type="tip">
+The gap between explaining a concept and understanding a confusion is the same gap between information and education.
+</Callout>
+
+## The Automated Feedback Pipeline
+
+One area where AI shows genuine promise is in automated feedback on student code. Rather than waiting days for a TA to grade assignments, students can receive immediate feedback on their submissions.
+
+But feedback quality matters enormously. Consider the difference between:
+
+> "Error: IndexError on line 12"
+
+versus
+
+> "Your loop is trying to access an element that doesn't exist. This often happens when we forget that Python uses zero-based indexing—so a list with 5 elements has indices 0, 1, 2, 3, 4, not 1, 2, 3, 4, 5."
+
+The first is what a computer generates naturally. The second requires understanding common student misconceptions. Modern LLMs can produce responses closer to the second, but they're still working from patterns in text rather than genuine understanding of student cognition.
+
+## Where Does This Leave Us?
+
+I don't think the answer is to reject AI tools in education. They're too useful for that. But I do think we need to be thoughtful about what we're optimizing for.
+
+Scaling education isn't just about reaching more students—it's about reaching them *well*. If we build systems that can explain concepts but can't recognize confusion, we've built something like a very patient textbook, not something like a teacher.
+
+The click, that moment of genuine understanding, emerges from a relationship. It requires someone to notice the precise contours of your misunderstanding. I'm not convinced we know how to build machines that can do this yet.
+
+Maybe we never will. Or maybe we'll find that the click can happen in new ways we haven't imagined. But until then, I think we need to be honest about what we're trading away when we trade human attention for algorithmic efficiency.
+
+---
+
+*This is the first in a series of posts exploring questions at the intersection of CS education and AI. Next up: what student data can and can't tell us about learning.*
