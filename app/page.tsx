@@ -7,19 +7,19 @@ export default async function Home() {
   const recentPosts = await getRecentPosts(5);
 
   return (
-    <div className="max-w-[800px] mx-auto px-4">
+    <div className="max-w-[680px] mx-auto px-6">
       <Hero />
 
       <section>
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="font-sans text-2xl font-semibold text-white">
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-sm font-medium text-muted uppercase tracking-wide">
             Recent Writing
           </h2>
           <Link
             href="/blog"
-            className="font-sans text-sm text-accent hover:text-accent-hover transition-colors"
+            className="text-sm text-muted hover:text-foreground transition-colors"
           >
-            View all &rarr;
+            View all
           </Link>
         </div>
 
@@ -30,7 +30,7 @@ export default async function Home() {
             ))}
           </div>
         ) : (
-          <p className="text-muted font-serif">No posts yet. Check back soon!</p>
+          <p className="text-muted">No posts yet. Check back soon!</p>
         )}
       </section>
     </div>

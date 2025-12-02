@@ -22,13 +22,13 @@ export function CategoryFilter({ currentCategory }: CategoryFilterProps) {
   };
 
   return (
-    <div className="flex flex-wrap gap-2 mb-8">
+    <div className="flex flex-wrap gap-2 mb-12">
       <button
         onClick={() => handleCategoryClick(null)}
-        className={`font-sans text-sm px-3 py-1.5 rounded-full border transition-colors ${
+        className={`text-sm px-4 py-2 rounded-full transition-all ${
           currentCategory === null
-            ? "bg-accent text-white border-accent"
-            : "text-muted border-border hover:border-accent hover:text-accent"
+            ? "bg-foreground text-background"
+            : "text-muted hover:text-foreground"
         }`}
       >
         All
@@ -37,10 +37,10 @@ export function CategoryFilter({ currentCategory }: CategoryFilterProps) {
         <button
           key={category}
           onClick={() => handleCategoryClick(category)}
-          className={`font-sans text-sm px-3 py-1.5 rounded-full border transition-colors ${
+          className={`text-sm px-4 py-2 rounded-full transition-all ${
             currentCategory === category
-              ? "bg-accent text-white border-accent"
-              : "text-muted border-border hover:border-accent hover:text-accent"
+              ? "bg-foreground text-background"
+              : "text-muted hover:text-foreground"
           }`}
         >
           {category}

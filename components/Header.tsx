@@ -2,25 +2,25 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <header className="border-b border-border">
-      <nav className="max-w-[800px] mx-auto px-4 py-4 flex items-center justify-between">
+    <header className="py-8">
+      <nav className="max-w-[680px] mx-auto px-6 flex items-center justify-between">
         <Link
           href="/"
-          className="font-sans text-xl font-bold text-white hover:text-accent transition-colors"
+          className="text-lg font-semibold tracking-tight text-foreground hover:opacity-60 transition-opacity"
         >
           Kai Daniels
         </Link>
 
-        <div className="flex gap-6">
+        <div className="flex gap-8">
           <Link
             href="/blog"
-            className="font-sans text-foreground hover:text-accent transition-colors"
+            className="text-sm text-muted hover:text-foreground transition-colors"
           >
             Writing
           </Link>
           <Link
             href="/about"
-            className="font-sans text-foreground hover:text-accent transition-colors"
+            className="text-sm text-muted hover:text-foreground transition-colors"
           >
             About
           </Link>

@@ -7,45 +7,41 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="max-w-[800px] mx-auto px-4 py-12">
-      <h1 className="font-sans text-4xl font-bold text-white mb-8">About</h1>
+    <div className="max-w-[680px] mx-auto px-6 py-12">
+      <h1 className="text-4xl font-semibold tracking-tight text-foreground mb-12">About</h1>
 
-      <div className="font-serif text-lg leading-relaxed space-y-6 text-foreground">
+      <div className="text-lg leading-relaxed space-y-6 text-foreground">
         <p>
           Hello! I&apos;m Kai Daniels, a researcher and engineer interested in the
           intersection of computer science education, technology policy, and
           critical approaches to understanding the tech industry.
         </p>
 
-        <h2 className="font-sans text-2xl font-semibold text-white mt-10 mb-4">
+        <h2 className="text-xl font-medium text-foreground mt-12 mb-4">
           Research Interests
         </h2>
 
         <p>My work spans three interconnected areas:</p>
 
-        <ul className="list-disc pl-6 space-y-3">
+        <ul className="list-disc pl-6 space-y-3 text-muted">
           <li>
-            <strong className="text-white">CS Education</strong> - I study how
+            <strong className="text-foreground">CS Education</strong> — I study how
             we can scale personalized learning while maintaining the
-            human elements that make education meaningful. This includes work on
-            AI tutoring systems, automated feedback mechanisms, and the
-            pedagogy of programming.
+            human elements that make education meaningful.
           </li>
           <li>
-            <strong className="text-white">Critical Tech Studies</strong> - I
+            <strong className="text-foreground">Critical Tech Studies</strong> — I
             examine the political economy of the tech industry, with particular
-            attention to labor conditions, the hidden costs of AI systems, and
-            movements for worker power in tech.
+            attention to labor conditions and the hidden costs of AI systems.
           </li>
           <li>
-            <strong className="text-white">Technology &amp; Society</strong> - I
+            <strong className="text-foreground">Technology &amp; Society</strong> — I
             explore how technological systems shape and are shaped by social
-            structures, asking questions about power, equity, and the values
-            embedded in the things we build.
+            structures, asking questions about power, equity, and values.
           </li>
         </ul>
 
-        <h2 className="font-sans text-2xl font-semibold text-white mt-10 mb-4">
+        <h2 className="text-xl font-medium text-foreground mt-12 mb-4">
           Background
         </h2>
 
@@ -55,14 +51,13 @@ export default function AboutPage() {
           scale to conducting qualitative research on how people learn to code.
         </p>
 
-        <p>
+        <p className="text-muted">
           This blog is a space for me to think through ideas at the intersection
-          of my interests. The writing here represents work in progress&mdash;
-          attempts to make sense of complex topics rather than definitive
-          statements.
+          of my interests. The writing here represents work in progress—attempts
+          to make sense of complex topics rather than definitive statements.
         </p>
 
-        <h2 className="font-sans text-2xl font-semibold text-white mt-10 mb-4">
+        <h2 className="text-xl font-medium text-foreground mt-12 mb-4">
           Get in Touch
         </h2>
 
@@ -71,7 +66,7 @@ export default function AboutPage() {
           questions. You can reach me at{" "}
           <a
             href="mailto:your@email.com"
-            className="text-accent hover:text-accent-hover underline underline-offset-2"
+            className="underline underline-offset-2 hover:opacity-60 transition-opacity"
           >
             your@email.com
           </a>

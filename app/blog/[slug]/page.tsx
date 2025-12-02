@@ -39,12 +39,6 @@ const rehypePrettyCodeOptions = {
   keepBackground: true,
 };
 
-const categoryColors: Record<string, string> = {
-  "CS Education": "bg-blue-900/30 text-blue-300 border-blue-700/50",
-  "Critical Tech": "bg-red-900/30 text-red-300 border-red-700/50",
-  "Technology & Society": "bg-purple-900/30 text-purple-300 border-purple-700/50",
-};
-
 export default async function BlogPost({ params }: BlogPostProps) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
@@ -62,37 +56,28 @@ export default async function BlogPost({ params }: BlogPostProps) {
     }
   );
 
-  const categoryClass =
-    categoryColors[post.frontmatter.category] ||
-    "bg-gray-900/30 text-gray-300 border-gray-700/50";
-
   return (
-    <article className="max-w-[800px] mx-auto px-4 py-12">
+    <article className="max-w-[680px] mx-auto px-6 py-12">
       <Link
         href="/blog"
-        className="font-sans text-sm text-muted hover:text-accent transition-colors mb-8 inline-block"
+        className="text-sm text-muted hover:text-foreground transition-colors mb-12 inline-block"
       >
-        &larr; Back to all posts
+        &larr; Back
       </Link>
 
-      <header className="mb-8">
-        <div className="flex items-center gap-3 mb-3">
-          <time className="text-sm text-muted font-sans">{formattedDate}</time>
-          <span
-            className={`text-xs px-2 py-0.5 rounded border font-sans ${categoryClass}`}
-          >
-            {post.frontmatter.category}
-          </span>
+      <header className="mb-12">
+        <div className="flex items-center gap-3 mb-4">
+          <time className="text-sm text-muted">{formattedDate}</time>
+          <span className="text-sm text-muted">·</span>
+          <span className="text-sm text-muted">{post.frontmatter.category}</span>
         </div>
-        <h1 className="font-sans text-4xl md:text-5xl font-bold text-white mb-4">
+        <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6 leading-tight">
           {post.frontmatter.title}
         </h1>
-        <p className="font-serif text-xl text-muted leading-relaxed">
+        <p className="text-lg text-muted leading-relaxed">
           {post.frontmatter.excerpt}
         </p>
       </header>
-
-      <hr className="border-border mb-8" />
 
       <div className="prose prose-lg max-w-none">
         <MDXRemote

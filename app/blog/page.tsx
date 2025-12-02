@@ -20,7 +20,7 @@ async function PostsList({ category }: { category: Category | null }) {
 
   if (posts.length === 0) {
     return (
-      <p className="text-muted font-serif py-8">
+      <p className="text-muted py-8">
         No posts in this category yet.
       </p>
     );
@@ -44,8 +44,8 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     : null;
 
   return (
-    <div className="max-w-[800px] mx-auto px-4 py-12">
-      <h1 className="font-sans text-4xl font-bold text-white mb-8">Writing</h1>
+    <div className="max-w-[680px] mx-auto px-6 py-12">
+      <h1 className="text-4xl font-semibold tracking-tight text-foreground mb-12">Writing</h1>
 
       <Suspense fallback={null}>
         <CategoryFilter currentCategory={currentCategory} />

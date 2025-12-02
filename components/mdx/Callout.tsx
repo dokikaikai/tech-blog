@@ -6,26 +6,17 @@ interface CalloutProps {
 }
 
 const styles = {
-  info: "bg-blue-900/20 border-blue-500 text-blue-200",
-  warning: "bg-yellow-900/20 border-yellow-500 text-yellow-200",
-  tip: "bg-green-900/20 border-green-500 text-green-200",
-};
-
-const icons = {
-  info: "i",
-  warning: "!",
-  tip: "~",
+  info: "bg-neutral-100 border-neutral-400",
+  warning: "bg-amber-50 border-amber-400",
+  tip: "bg-emerald-50 border-emerald-400",
 };
 
 export function Callout({ type = "info", children }: CalloutProps) {
   return (
     <div
-      className={`border-l-4 ${styles[type]} p-4 my-6 rounded-r-lg font-serif`}
+      className={`border-l-2 ${styles[type]} p-5 my-8 text-foreground`}
     >
-      <div className="flex gap-3">
-        <span className="font-sans font-bold text-lg">{icons[type]}</span>
-        <div>{children}</div>
-      </div>
+      {children}
     </div>
   );
 }

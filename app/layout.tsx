@@ -18,12 +18,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-background text-foreground antialiased">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-screen flex flex-col bg-background text-foreground antialiased font-sans">
         <Header />
         <main className="flex-1">{children}</main>
-        <footer className="border-t border-border py-8 mt-16">
-          <div className="max-w-[800px] mx-auto px-4 text-center text-muted text-sm font-sans">
-            <p>&copy; {new Date().getFullYear()} Kai Daniels. All rights reserved.</p>
+        <footer className="py-12 mt-24">
+          <div className="max-w-[680px] mx-auto px-6 text-center text-muted text-sm">
+            <p>&copy; {new Date().getFullYear()} Kai Daniels</p>
           </div>
         </footer>
       </body>
