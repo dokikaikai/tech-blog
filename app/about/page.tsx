@@ -12,79 +12,49 @@ export default function AboutPage() {
 
       <div className="text-lg leading-relaxed space-y-6 text-foreground">
         <p>
-          Hello! I&apos;m Kai Daniels, a software engineer and educator interested in computer science
-          education, pedagogical tooling, technology policy, and
-          critical approaches to understanding tech and society.
+          I&apos;m Kai Daniels, a software engineer and educator based in Seattle. I studied
+          Computer Science at the University of Washington, where I also spent several years
+          teaching introductory programming and algorithms courses.
         </p>
 
         <p>
-          I hold a BS in Computer Science from the University of Washington.
-        </p>
-
-        <h2 className="text-xl font-medium text-foreground mt-12 mb-4">
-          Industry
-        </h2>
-
-        <p>
-          I&apos;m currently a Software Engineer at Microsoft (Sep 2023–Present), where I work on the
-          Azure Linux team maintaining an internal service for Linux repositories—specifically
-          RPM and DEB-based distributions. My work touches on cloud engineering, CI/CD pipelines,
-          automation, and integrating AI into development workflows.
-        </p>
-
-        <h2 className="text-xl font-medium text-foreground mt-12 mb-4">
-          Education Work
-        </h2>
-
-        <p>
-          Most recently, I volunteered through the{" "}
-          <a
-            href="https://www.microsoft.com/en-us/teals"
-            className="underline underline-offset-2 hover:opacity-60 transition-opacity"
-          >
-            Microsoft TEALS program
-          </a>{" "}
-          at Trezevant High School in Memphis, TN (Aug–Oct 2024), doing high-impact
-          CS education work in a historically disenfranchised school district.
+          Currently, I work at Microsoft on the Azure Linux team, building infrastructure
+          for Linux package management and distribution. My day-to-day involves cloud systems,
+          CI/CD pipelines, and finding ways to make complex workflows more reliable.
         </p>
 
         <p>
-          Prior to that, I was a Summer Lecturer at the University of Washington (Jun–Sep 2023),
-          where I taught the inaugural offering of{" "}
+          Teaching has shaped how I think about technology. I&apos;ve taught in a few different
+          contexts—as a lecturer for UW&apos;s{" "}
           <a
             href="https://courses.cs.washington.edu/courses/cse121/23su/"
             className="underline underline-offset-2 hover:opacity-60 transition-opacity"
           >
-            CSE 121
+            introductory CS course
           </a>
-          , an introductory programming course.
+          , as a TA for nine quarters across the intro series and algorithms, and more recently
+          through{" "}
+          <a
+            href="https://www.microsoft.com/en-us/teals"
+            className="underline underline-offset-2 hover:opacity-60 transition-opacity"
+          >
+            Microsoft TEALS
+          </a>
+          , where I helped develop a data science curriculum for a high school in Memphis
+          serving students with limited prior access to CS education.
         </p>
 
-        <h2 className="text-xl font-medium text-foreground mt-12 mb-4">
-          Research Interests
-        </h2>
+        <p>
+          These experiences inform what I think about and write about here: how we teach
+          programming, who gets access to technical education, and what it means to build
+          technology responsibly. I&apos;m particularly interested in the tension between
+          scaling CS education and preserving the parts of learning that require human
+          attention and care.
+        </p>
 
-        <p>My interests span three interconnected areas:</p>
-
-        <ul className="list-disc pl-6 space-y-3 text-muted">
-          <li>
-            <strong className="text-foreground">CS Education</strong> — Scaling personalized
-            learning while maintaining the human elements that make education meaningful.
-          </li>
-          <li>
-            <strong className="text-foreground">Critical Tech Studies</strong> — The political
-            economy of the tech industry, labor conditions, and the hidden costs of AI systems.
-          </li>
-          <li>
-            <strong className="text-foreground">Technology &amp; Society</strong> — How
-            technological systems shape and are shaped by social structures, power, and equity.
-          </li>
-        </ul>
-
-        <p className="text-muted mt-8">
-          This blog is a space for me to think through ideas at the intersection
-          of my interests. The writing here represents work in progress—attempts
-          to make sense of complex topics rather than definitive statements.
+        <p className="text-muted">
+          This blog is where I work through ideas—mostly half-formed, sometimes
+          wrong, always in progress.
         </p>
 
         <h2 className="text-xl font-medium text-foreground mt-12 mb-4">
@@ -92,8 +62,7 @@ export default function AboutPage() {
         </h2>
 
         <p>
-          I&apos;m always happy to connect with others working on similar
-          questions. You can reach me at{" "}
+          Feel free to reach out at{" "}
           <a
             href="mailto:daikaile13@gmail.com"
             className="underline underline-offset-2 hover:opacity-60 transition-opacity"
