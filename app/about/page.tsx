@@ -25,7 +25,7 @@ export default function AboutPage() {
 
         <p>
           Teaching has shaped how I think about technology. I&apos;ve taught in a few different
-          contexts—as a lecturer for UW&apos;s{" "}
+          contexts - as a lecturer for UW&apos;s{" "}
           <a
             href="https://courses.cs.washington.edu/courses/cse121/23su/"
             className="underline underline-offset-2 hover:opacity-60 transition-opacity"
@@ -53,7 +53,7 @@ export default function AboutPage() {
         </p>
 
         <p className="text-muted">
-          This blog is where I work through ideas—mostly half-formed, sometimes
+          This blog is where I work through ideas - mostly half-formed, sometimes
           wrong, always in progress.
         </p>
 

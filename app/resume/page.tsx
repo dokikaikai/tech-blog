@@ -46,7 +46,7 @@ export default function ResumePage() {
               </div>
               <p className="text-muted mb-3">University of Washington – Seattle, WA</p>
               <ul className="list-disc pl-5 space-y-2 text-foreground">
-                <li>Lectured for CSE 121 (Introduction to Computer Programming I) to nearly 50 students—managing a team of 8 TAs to deliver Java fundamentals curriculum with coding assessments, in-person lectures, creative projects, and weekly quiz sections.</li>
+                <li>Lectured for CSE 121 (Introduction to Computer Programming I) to nearly 50 students - managing a team of 8 TAs to deliver Java fundamentals curriculum with coding assessments, in-person lectures, creative projects, and weekly quiz sections.</li>
               </ul>
             </div>
 
