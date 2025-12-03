@@ -19,6 +19,12 @@ export function Header() {
             Writing
           </Link>
           <Link
+            href="/teaching"
+            className="text-sm text-muted hover:text-foreground transition-colors"
+          >
+            Teaching
+          </Link>
+          <Link
             href="/resume"
             className="text-sm text-muted hover:text-foreground transition-colors"
           >
