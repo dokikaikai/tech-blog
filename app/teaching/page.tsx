@@ -34,6 +34,7 @@ const teachingItems: TeachingCard[] = [
     tags: ["CS Education Pedagogy", "Social Justice", "K-12"],
     links: [
       { label: "TEALS Program", href: "https://www.microsoft.com/en-us/teals" },
+      { label: "Reflection", href: "/blog/trezevant-reflection" },
     ],
   },
   {
