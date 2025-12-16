@@ -27,7 +27,7 @@ export function CategoryFilter({ currentCategory }: CategoryFilterProps) {
         onClick={() => handleCategoryClick(null)}
         className={`text-sm px-4 py-2 rounded-full transition-all ${
           currentCategory === null
-            ? "bg-foreground text-background"
+            ? "bg-neutral-800 text-neutral-100 dark:bg-neutral-700 dark:text-neutral-200"
             : "text-muted hover:text-foreground"
         }`}
       >
@@ -39,7 +39,7 @@ export function CategoryFilter({ currentCategory }: CategoryFilterProps) {
           onClick={() => handleCategoryClick(category)}
           className={`text-sm px-4 py-2 rounded-full transition-all ${
             currentCategory === category
-              ? "bg-foreground text-background"
+              ? "bg-neutral-800 text-neutral-100 dark:bg-neutral-700 dark:text-neutral-200"
               : "text-muted hover:text-foreground"
           }`}
         >
