@@ -44,8 +44,8 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     : null;
 
   return (
-    <div className="max-w-[680px] mx-auto px-6 py-12">
-      <h1 className="text-4xl font-semibold tracking-tight text-foreground mb-12">Writing</h1>
+    <div className="max-w-[680px] mx-auto px-4 md:px-6 py-8 md:py-12">
+      <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-8 md:mb-12">Writing</h1>
 
       <Suspense fallback={null}>
         <CategoryFilter currentCategory={currentCategory} />

@@ -43,8 +43,8 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-background text-foreground antialiased font-sans">
         <Header />
         <main className="flex-1">{children}</main>
-        <footer className="py-12 mt-24">
-          <div className="max-w-[680px] mx-auto px-6 text-center text-muted text-sm">
+        <footer className="py-8 md:py-12 mt-16 md:mt-24">
+          <div className="max-w-[680px] mx-auto px-4 md:px-6 text-center text-muted text-sm">
             <p>&copy; {new Date().getFullYear()} Kai Daniels</p>
           </div>
         </footer>

@@ -57,29 +57,29 @@ export default async function BlogPost({ params }: BlogPostProps) {
   );
 
   return (
-    <article className="max-w-[680px] mx-auto px-6 py-12">
+    <article className="max-w-[680px] mx-auto px-4 md:px-6 py-8 md:py-12">
       <Link
         href="/blog"
-        className="text-sm text-muted hover:text-foreground transition-colors mb-12 inline-block"
+        className="text-sm text-muted hover:text-foreground transition-colors mb-8 md:mb-12 inline-block"
       >
         &larr; Back
       </Link>
 
-      <header className="mb-12">
+      <header className="mb-8 md:mb-12">
         <div className="flex items-center gap-3 mb-4">
           <time className="text-sm text-muted">{formattedDate}</time>
           <span className="text-sm text-muted">·</span>
           <span className="text-sm text-muted">{post.frontmatter.category}</span>
         </div>
-        <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6 leading-tight">
+        <h1 className="text-2xl md:text-4xl font-semibold tracking-tight text-foreground mb-4 md:mb-6 leading-tight">
           {post.frontmatter.title}
         </h1>
-        <p className="text-lg text-muted leading-relaxed">
+        <p className="text-base md:text-lg text-muted leading-relaxed">
           {post.frontmatter.excerpt}
         </p>
       </header>
 
-      <div className="prose prose-lg max-w-none">
+      <div className="prose prose-base md:prose-lg max-w-none">
         <MDXRemote
           source={post.content}
           components={mdxComponents}

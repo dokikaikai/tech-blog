@@ -22,7 +22,7 @@ export function CategoryFilter({ currentCategory }: CategoryFilterProps) {
   };
 
   return (
-    <div className="flex flex-wrap gap-2 mb-12">
+    <div className="flex flex-wrap gap-2 mb-8 md:mb-12">
       <button
         onClick={() => handleCategoryClick(null)}
         className={`text-sm px-4 py-2 rounded-full transition-all ${

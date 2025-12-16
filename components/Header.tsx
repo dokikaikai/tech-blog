@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { ThemeToggle } from "./ThemeToggle";
+import { MobileMenu } from "./MobileMenu";
 
 export function Header() {
   return (
-    <header className="py-8">
-      <nav className="max-w-[680px] mx-auto px-6 flex items-center justify-between">
+    <header className="relative py-6 md:py-8">
+      <nav className="max-w-[680px] mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link
           href="/"
           className="text-lg font-semibold tracking-tight text-foreground hover:opacity-60 transition-opacity"
@@ -12,7 +13,8 @@ export function Header() {
           Kai Daniels
         </Link>
 
-        <div className="flex items-center gap-8">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-8">
           <Link
             href="/blog"
             className="text-sm text-muted hover:text-foreground transition-colors"
@@ -39,6 +41,9 @@ export function Header() {
           </Link>
           <ThemeToggle />
         </div>
+
+        {/* Mobile Navigation */}
+        <MobileMenu />
       </nav>
     </header>
   );
