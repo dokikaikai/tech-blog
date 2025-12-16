@@ -11,6 +11,15 @@
   --border: #e5e5e5;
 }
 
+.dark {
+  --background: #1a1a1a;
+  --foreground: #d4d4d4;
+  --accent: #e5e5e5;
+  --accent-hover: #a3a3a3;
+  --muted: #8a8a8a;
+  --border: #333333;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -56,6 +65,11 @@ pre [data-highlighted-line] {
   font-weight: 500;
 }
 
+.dark :not(pre) > code {
+  background-color: #27272a;
+  color: #e4e4e7;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
@@ -67,6 +81,11 @@ html {
   color: #fff;
 }
 
+.dark ::selection {
+  background-color: #fff;
+  color: #000;
+}
+
 /* Prose adjustments for light theme */
 .prose {
   --tw-prose-body: #171717;
@@ -75,6 +94,15 @@ html {
   --tw-prose-bold: #000000;
   --tw-prose-quotes: #404040;
   --tw-prose-quote-borders: #000000;
+}
+
+.dark .prose {
+  --tw-prose-body: #d4d4d4;
+  --tw-prose-headings: #e5e5e5;
+  --tw-prose-links: #e5e5e5;
+  --tw-prose-bold: #e5e5e5;
+  --tw-prose-quotes: #8a8a8a;
+  --tw-prose-quote-borders: #e5e5e5;
 }
 
 .prose a {
@@ -93,6 +121,10 @@ html {
   background-color: transparent;
   padding-left: 1.5rem;
   font-style: normal;
+}
+
+.dark .prose blockquote {
+  border-left-color: #e5e5e5;
 }
 
 .prose hr {
